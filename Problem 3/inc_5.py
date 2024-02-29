@@ -5,9 +5,9 @@ Name: Christine Parrish
 Lab Time: 3:00 PM Friday
 """
 
-def inc_5():
-    # Write your code here
-    
+def inc_5(int1,int2):
+    for x in range(int1, int2, 5):
+        print(str(x) + ' ')    
 
 
 
