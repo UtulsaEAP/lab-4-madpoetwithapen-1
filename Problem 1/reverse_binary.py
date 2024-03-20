@@ -5,13 +5,17 @@ Name: Christine Parrish
 Lab Time: 3:00 PM Friday 
 
 """
-
-
 def reverse_binary():
-    user_num = int(input())
-    while user_num > 0:
-       print(user_num % 2)
-       user_num = user_num // 2
+    x = int(input())
+    binary_string = ""
+
+
+    while x > 0:
+        binary_string += str(x % 2)
+        x //= 2
+    print(binary_string)
+    #print(binary_string[::-1])
+
 
 if __name__ == "__main__":
     reverse_binary()
