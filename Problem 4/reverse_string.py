@@ -5,24 +5,13 @@ Name: Christine Parrish
 Lab Time: 3:00 PM Friday
 """
 
-def reverse_string():   
+def reverse_string():  
     while True:
-        inputString = input()
-        if inputString == "Done":
-            break
-        elif inputString == "done":
-            break
-        elif inputString == "d":
-            break
+        user_input = input()
+        if user_input.lower()in["done","d"]: 
+            break   
+    reversed_text = user_input[::-1]
+    print(reversed_text)
 
-        else:
-            i = 0
-            letter = len(inputString)
-            reverseString = ''
-
-            for letter in inputString:
-                reverseString += inputString[(-1 - i)]
-                i += 1
-            print(reverseString)
-        
-reverse_string()
+if __name__ == "__main__": 
+    reverse_string()
